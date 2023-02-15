@@ -3,6 +3,7 @@ import './App.css';
 import 'aos/dist/aos.css';
 import logo from './logo.svg'
 import {useEffect, useState} from 'react';
+import rocket from './rocket.png'
 
 function App() {
 
@@ -33,6 +34,23 @@ function App() {
         
         src={logo} alt="logo" 
         />
+      </section>
+      <section className='s4'>
+        <div>
+          <h1 
+            data-aos="fade-down" 
+            data-aos-delay="1500">위대한 도약</h1>
+          {/* custom ani */}
+          <img 
+            data-aos 
+            data-aos-duration='3000'
+            data-aos-delay='0'
+            className='rocket'
+            style={{
+              width: '600px'
+            }}
+            src={rocket} alt="rocket" />
+        </div>
       </section>
     </div>
   );

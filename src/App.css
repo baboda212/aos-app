@@ -37,3 +37,21 @@ p{
 .s3 .logo.aos-animate {
   transform: translateY(-200%);
 }
+
+.s4 {
+  background: #2980b9;
+  overflow: hidden;
+  position: relative;
+}
+
+.s4 h1 {
+  transform: translateY(50%)
+}
+
+.rocket {
+  transform: translateY(200%);
+}
+
+.rocket.aos-animate {
+  transform: translateY(-200%);
+}
