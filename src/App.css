@@ -33,6 +33,7 @@ p{
 /* aos animation */
 .s3 .logo{
   transform: translateY(200%);
+  
 }
 .s3 .logo.aos-animate {
   transform: translateY(-200%);
@@ -54,4 +55,25 @@ p{
 
 .rocket.aos-animate {
   transform: translateY(-200%);
+}
+
+.s5{
+  background: lightpink;
+  overflow: hidden;
+}
+.s5 .loading{
+  transform-origin: 50% 50%;
+  animation: rotate_img 6s linear infinite;
+}
+@keyframes rotate_img{
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.s5 .drive{
+  transform: translateX(0%);
+}
+.s5 .drive.aos-animate{
+  transform: translateX(500%);
 }
