@@ -8,7 +8,8 @@ import {BsFillClockFill} from 'react-icons/bs';
 import {BsFillDropletFill} from 'react-icons/bs';
 import { FcSettings } from "react-icons/fc";
 import { FcShipped } from "react-icons/fc";
-
+import { FcFactory } from "react-icons/fc";
+/* 아이콘 :https://react-icons.github.io/react-icons/icons?name=fc */
 function App() {
 
   //AOS초기화
@@ -70,8 +71,7 @@ function App() {
           data-aos-duration='3000'
           style={IconLarge}
           />
-        </div>
-        <div>
+          <FcFactory style={IconLarge}/>
           <FcShipped 
           className='drive'
           style={IconLarge}
@@ -80,6 +80,9 @@ function App() {
           data-aos-duration='10000'
           />
         </div>
+        
+          
+        
       </section>
     </div>
   );
