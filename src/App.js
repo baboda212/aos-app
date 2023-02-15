@@ -7,9 +7,21 @@ import rocket from './rocket.png';
 import {BsFillClockFill} from 'react-icons/bs';
 import {BsFillDropletFill} from 'react-icons/bs';
 import { FcSettings } from "react-icons/fc";
-import { FcShipped } from "react-icons/fc";
-import { FcFactory } from "react-icons/fc";
+import { FcShipped } from "react-icons/fc"; //트럭1
+import { FcFactory } from "react-icons/fc";//공장
+import { FcDepartment } from "react-icons/fc";//건물
+import { FcHome } from "react-icons/fc";//건물
+import { FcLandscape } from "react-icons/fc"; //산
+import { FcLibrary } from "react-icons/fc";//도서관
+import { FcInTransit } from "react-icons/fc"; //트럭
+import { FcOrganization } from "react-icons/fc"; //빌딩
+import { FcShop } from "react-icons/fc"; //가게
 /* 아이콘 :https://react-icons.github.io/react-icons/icons?name=fc */
+
+
+
+
+
 function App() {
 
   //AOS초기화
@@ -19,6 +31,7 @@ function App() {
 
   const IconLarge = {fontSize: '80px'};
   const IconSmall = {fontSize: '40px'};
+  const IconBig = {fontSize: '150px'};
 
   return (
     <div className="App">
@@ -80,9 +93,25 @@ function App() {
           data-aos-duration='10000'
           />
         </div>
-        
-          
-        
+      </section>
+      <section className='s6'>
+        <div className='back'>
+            <FcFactory style={IconLarge}/>
+            <FcDepartment style={IconLarge}/>
+            <FcHome style={IconLarge}/>
+            <FcLibrary style={IconLarge}/>
+            <FcOrganization style={IconLarge}/>
+            <FcShop style={IconLarge}/>
+            <div className='car'>
+              <FcInTransit 
+              style={IconLarge}
+              className='truck'
+              data-aos
+              data-aos-delay='1000'
+              data-aos-duration='10000'
+              />
+            </div>
+        </div>
       </section>
     </div>
   );

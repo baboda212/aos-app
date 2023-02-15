@@ -77,3 +77,20 @@ p{
 .s5 .drive.aos-animate{
   transform: translateX(500%);
 }
+
+.s6{
+  background: lightcyan;
+}
+.s6 .back{
+  position: relative;
+}
+.s6 .back .car{
+  position: absolute;
+  top: 50px;
+}
+.s6 .back .car .truck{
+  transform: translateX(0%);
+}
+.s6 .back .car .truck.aos-animate{
+  transform: translateX(600%);
+}
